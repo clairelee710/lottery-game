@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Teko:700" rel="stylesheet">
+    <link href="./dist/css/lotto.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="image-overlay"></div>
+        <div class="marquee-container">
+            <marquee direction="left" speed="normal" behavior="loop" id="marquee-top" class="marquee">
+                <span>YEAR END PARTY 2018 (^_^)</span>
+                <span>YEAR END PARTY 2018 (^_^)</span>
+                <span>YEAR END PARTY 2018 (^_^)</span>
+            </marquee>
+        </div>
+        <div>
+            <div class="slots-container">
+                <ul class="slot">
+                    <li><span><em>0</em></span></li>
+                    <li><span><em>1</em></span></li>
+                    <li><span><em>2</em></span></li>
+                    <li><span><em>3</em></span></li>
+                    <li><span><em>4</em></span></li>
+                    <li><span><em>5</em></span></li>
+                    <li><span><em>6</em></span></li>
+                    <li><span><em>7</em></span></li>
+                    <li><span><em>8</em></span></li>
+                    <li><span><em>9</em></span></li>
+                </ul>
+            </div>
+            <div class="btn-container">
+                <button id="lotto-btn" class="lotto-btn"></button>
+            </div>
+        </div>
+    </main>
+    <div id="confetti" class="confetti-container">
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+        <div class="confetti"></div>
+    </div>
+    <div>
+	    <audio id="spinner-audio" preload="true">
+	        <source src="./dist/audio/spinner.mp3">
+	    </audio>
+	    <audio id="win-audio" preload="true">
+	        <source src="./dist/audio/win.mp3">
+	    </audio>
+    </div>
+    <script type="text/javascript" src="./dist/js/core.js"></script>
+    <script type="text/javascript" src="./assets/js/data.js"></script>
+    <script type="text/javascript" src="./dist/js/main.js"></script>
+</body>
+
+</html>

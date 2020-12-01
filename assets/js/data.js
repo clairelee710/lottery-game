@@ -1,0 +1,77 @@
+$(function() {
+    var allMembersData = [
+        { "name": "Wade", "number": "007" },
+        { "name": "Jeff", "number": "014" },
+        { "name": "Shannon", "number": "033" },
+        { "name": "Charleen", "number": "076" },
+        { "name": "Cocoya", "number": "087" },
+        { "name": "Benjamin", "number": "100" },
+        { "name": "Pete", "number": "105" },
+        { "name": "RiCo", "number": "115" },
+        { "name": "Hannah", "number": "117" },
+        { "name": "Tasha", "number": "118" },
+        { "name": "Adam", "number": "119" },
+        { "name": "Jason", "number": "123" },
+        { "name": "Cinzia", "number": "125" },
+        { "name": "Rainy", "number": "129" },
+        { "name": "Chris", "number": "130" },
+        { "name": "Ian", "number": "149" },
+        { "name": "Ellen", "number": "158" },
+        { "name": "Sean", "number": "168" },
+        { "name": "Rico", "number": "218" },
+        { "name": "Flora", "number": "313" },
+        { "name": "Aaron", "number": "321" },
+        { "name": "bert", "number": "357" },
+        { "name": "Zevi", "number": "369" },
+        { "name": "Lawrence", "number": "371" },
+        { "name": "Duran", "number": "416" },
+        { "name": "Wesley", "number": "478" },
+        { "name": "Maggie", "number": "483" },
+        { "name": "Allen", "number": "513" },
+        { "name": "Jackey", "number": "515" },
+        { "name": "Houdini", "number": "517" },
+        { "name": "Sophie", "number": "520" },
+        { "name": "Novia", "number": "525" },
+        { "name": "Dennis", "number": "539" },
+        { "name": "Sally", "number": "540" },
+        { "name": "Pei", "number": "586" },
+        { "name": "Louis", "number": "618" },
+        { "name": "Kate", "number": "619" },
+        { "name": "Irene", "number": "629" },
+        { "name": "Colin", "number": "657" },
+        { "name": "Owen", "number": "666" },
+        { "name": "Sam", "number": "689" },
+        { "name": "Claire", "number": "710" },
+        { "name": "Jason", "number": "719" },
+        { "name": "Jerry", "number": "725" },
+        { "name": "Howard", "number": "727" },
+        { "name": "Eric", "number": "777" },
+        { "name": "Mars", "number": "788" },
+        { "name": "Doris", "number": "789" },
+        { "name": "Elma", "number": "811" },
+        { "name": "Wei", "number": "816" },
+        { "name": "Becky", "number": "821" },
+        { "name": "Luke", "number": "826" },
+        { "name": "Alvis", "number": "839" },
+        { "name": "Jason", "number": "878" },
+        { "name": "Dolly", "number": "888" },
+        { "name": "Chien Tseng", "number": "911" },
+        { "name": "Eric", "number": "919" },
+        { "name": "Patrick", "number": "924" },
+        { "name": "Sunny", "number": "925" },
+        { "name": "Vita", "number": "931" },
+        { "name": "Arthur", "number": "952" },
+        { "name": "Ben", "number": "978" },
+        { "name": "Ray", "number": "987" },
+        { "name": "Ellis", "number": "997" }
+    ];
+    
+    setInitData(allMembersData);
+
+    function setInitData(data) {
+        var storageNumbers = localStorage.getItem("LuckyNumbers2017");
+        if (!storageNumbers || storageNumbers.length < 1) {
+            localStorage.setItem("LuckyNumbers2017", JSON.stringify(data));
+        }
+    }
+});
